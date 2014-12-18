@@ -7,6 +7,9 @@
         <dependent-module archiveName="ServiceLayer-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ServiceLayer/ServiceLayer">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="HibernateLayer-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HibernateLayer/HibernateLayer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="PresentationLayer"/>
         <property name="java-output-path" value="/PresentationLayer/target/classes"/>
     </wb-module>

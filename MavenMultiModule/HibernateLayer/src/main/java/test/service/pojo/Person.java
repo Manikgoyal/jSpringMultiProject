@@ -1,13 +1,28 @@
 package test.service.pojo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="Person")
 public class Person {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "Id", unique = true, nullable = false)
+	private int id;
+	
+	@Column(name="name",unique=true,nullable=false,length=20)
 	private String name;
+	@Column(name="address",unique=true,nullable=false,length=20)
 	private String address;
+	@Column(name="age",unique=true,nullable=false,length=20)
 	private int age;
-	
-	
-	
 	
 	public Person(String name, String address, int age) {
 		super();

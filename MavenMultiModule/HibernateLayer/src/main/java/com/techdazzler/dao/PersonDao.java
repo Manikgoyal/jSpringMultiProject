@@ -10,4 +10,5 @@ public interface PersonDao {
 	void update(Person person);
 	void delete(Person person);
 	List<Person> allPerson();
+	void test();
 }
